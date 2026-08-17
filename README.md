@@ -1,15 +1,25 @@
 # AI-Diary-privacy-policy
 
 アプリ「AI Diary」のプライバシーポリシー及び利用規約の設置リポジトリです。
-GitHub Pages で静的サイトとして公開しています。
+GitHub Pages で公開しています。
 
-| ファイル | 内容 |
+**2文書はそれぞれ独立した単独ページ**です。まとめの入口ページ（index）はあえて置いていません。
+App Store 審査でリンクを開いたときに、1クリックも挟まず本文が表示される状態にするためです。
+
+| ファイル | 公開URL |
 |---|---|
-| `index.html` | 2文書への入口 |
-| `privacy-policy.html` | プライバシーポリシー（日本語・English） |
-| `terms.html` | 利用規約（日本語・English） |
-| `source/*.md` | 生成元の Markdown（差分レビュー用のコピー） |
+| `privacy-policy.html` | https://enginee-inc.github.io/AI-Diary-privacy-policy/privacy-policy.html |
+| `terms.html` | https://enginee-inc.github.io/AI-Diary-privacy-policy/terms.html |
+| `source/*.md` | 生成元の Markdown（差分レビュー用のコピー。公開表示には使わない） |
 | `.nojekyll` | Jekyll を無効化（`source/*.md` が HTML へ変換されて衝突するのを防ぐ） |
+
+各ページは日本語と英語を併記し、冒頭の言語切替と目次から辿れます。
+
+## ⚠️ 公開には可視性の切り替えが必要
+
+このリポジトリが **internal のままだと、上記URLは GitHub のログイン画面へリダイレクトされ、
+審査担当にもユーザーにも本文が見えません**（private Pages のため）。
+`Settings > General > Change repository visibility` から **Public** にしてください。
 
 ## ⚠️ このリポジトリの HTML を直接編集しないこと
 

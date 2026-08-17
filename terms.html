@@ -39,8 +39,6 @@ body {
 }
 .wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 96px; }
 header.doc { border-bottom: 1px solid var(--border); padding-bottom: 20px; margin-bottom: 8px; }
-.home { display: inline-block; color: var(--muted); text-decoration: none; font-size: 14px; margin-bottom: 12px; }
-.home:hover { color: var(--link); }
 h1 { font-size: 1.7rem; line-height: 1.4; margin: 8px 0 12px; letter-spacing: .01em; }
 h2 { font-size: 1.18rem; line-height: 1.5; margin: 44px 0 10px; padding-top: 8px; }
 h3 { font-size: 1rem; margin: 28px 0 6px; color: var(--accent); }
@@ -67,20 +65,11 @@ th { background: var(--surface); font-weight: 600; }
 .toc a { text-decoration: none; }
 .toc a:hover { text-decoration: underline; }
 .lang-section { scroll-margin-top: 12px; }
-.updated { color: var(--muted); font-size: .88rem; margin: 0; }
 footer { margin-top: 64px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: .82rem; }
 footer a { color: var(--muted); }
-.cards { display: grid; gap: 14px; margin: 24px 0; }
-.card {
-  display: block; border: 1px solid var(--border); border-radius: 12px;
-  padding: 18px 20px; text-decoration: none; color: inherit; background: var(--surface);
-}
-.card:hover { border-color: var(--link); }
-.card .t { font-size: 1.06rem; font-weight: 700; margin-bottom: 3px; }
-.card .d { color: var(--muted); font-size: .87rem; }
 @media print {
   body { font-size: 11pt; line-height: 1.6; }
-  .langbar, .toc, .home { display: none; }
+  .langbar, .toc { display: none; }
   a { color: inherit; text-decoration: underline; }
 }
 </style>
@@ -88,7 +77,6 @@ footer a { color: var(--muted); }
 <body>
 <div class="wrap">
 <header class="doc">
-<a class="home" href="./">&larr; AI Diary 法的文書</a>
 <div class="langbar"><a href="#ja">日本語</a><a href="#en">English</a></div>
 </header>
 <section class="lang-section" id="ja" lang="ja">
