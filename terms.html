@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>利用規約｜AI Diary</title>
+<meta name="robots" content="index, follow" />
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --surface: #f6f7f9;
+  --text: #1a1c1e;
+  --muted: #5b6169;
+  --border: #d9dde2;
+  --link: #1f6feb;
+  --accent: #6b4fbb;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14161a;
+    --surface: #1d2026;
+    --text: #e6e8eb;
+    --muted: #a2a9b3;
+    --border: #333941;
+    --link: #7fb0ff;
+    --accent: #b39cf0;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Segoe UI", Roboto, sans-serif;
+  line-height: 1.85;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+.wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 96px; }
+header.doc { border-bottom: 1px solid var(--border); padding-bottom: 20px; margin-bottom: 8px; }
+.home { display: inline-block; color: var(--muted); text-decoration: none; font-size: 14px; margin-bottom: 12px; }
+.home:hover { color: var(--link); }
+h1 { font-size: 1.7rem; line-height: 1.4; margin: 8px 0 12px; letter-spacing: .01em; }
+h2 { font-size: 1.18rem; line-height: 1.5; margin: 44px 0 10px; padding-top: 8px; }
+h3 { font-size: 1rem; margin: 28px 0 6px; color: var(--accent); }
+p { margin: 12px 0; }
+ul, ol { margin: 12px 0; padding-left: 1.5em; }
+li { margin: 7px 0; }
+a { color: var(--link); overflow-wrap: anywhere; }
+strong { font-weight: 700; }
+hr { border: 0; border-top: 1px solid var(--border); margin: 36px 0; }
+.table-wrap { overflow-x: auto; margin: 16px 0; -webkit-overflow-scrolling: touch; }
+table { border-collapse: collapse; width: 100%; font-size: .92rem; min-width: 460px; }
+th, td { border: 1px solid var(--border); padding: 9px 11px; text-align: left; vertical-align: top; line-height: 1.7; }
+th { background: var(--surface); font-weight: 600; }
+.langbar { display: flex; gap: 8px; margin: 16px 0 4px; flex-wrap: wrap; }
+.langbar a {
+  font-size: .85rem; text-decoration: none; color: var(--muted);
+  border: 1px solid var(--border); border-radius: 999px; padding: 5px 14px;
+}
+.langbar a:hover { color: var(--link); border-color: var(--link); }
+.toc { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 18px; margin: 20px 0 8px; }
+.toc p { margin: 0 0 8px; font-size: .8rem; font-weight: 700; color: var(--muted); letter-spacing: .06em; }
+.toc ol { margin: 0; padding-left: 1.3em; }
+.toc li { margin: 3px 0; font-size: .9rem; }
+.toc a { text-decoration: none; }
+.toc a:hover { text-decoration: underline; }
+.lang-section { scroll-margin-top: 12px; }
+.updated { color: var(--muted); font-size: .88rem; margin: 0; }
+footer { margin-top: 64px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: .82rem; }
+footer a { color: var(--muted); }
+.cards { display: grid; gap: 14px; margin: 24px 0; }
+.card {
+  display: block; border: 1px solid var(--border); border-radius: 12px;
+  padding: 18px 20px; text-decoration: none; color: inherit; background: var(--surface);
+}
+.card:hover { border-color: var(--link); }
+.card .t { font-size: 1.06rem; font-weight: 700; margin-bottom: 3px; }
+.card .d { color: var(--muted); font-size: .87rem; }
+@media print {
+  body { font-size: 11pt; line-height: 1.6; }
+  .langbar, .toc, .home { display: none; }
+  a { color: inherit; text-decoration: underline; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="doc">
+<a class="home" href="./">&larr; AI Diary 法的文書</a>
+<div class="langbar"><a href="#ja">日本語</a><a href="#en">English</a></div>
+</header>
+<section class="lang-section" id="ja" lang="ja">
+<nav class="toc"><p>目次</p><ol><li><a href="#ja-s2">第1条（適用）</a></li><li><a href="#ja-s3">第2条（アカウント）</a></li><li><a href="#ja-s4">第3条（本サービスの内容とAI生成物について）</a></li><li><a href="#ja-s5">第4条（記憶機能）</a></li><li><a href="#ja-s6">第5条（位置情報を利用する機能）</a></li><li><a href="#ja-s7">第6条（通知・着信機能）</a></li><li><a href="#ja-s8">第7条（利用回数・利用時間の制限）</a></li><li><a href="#ja-s9">第8条（料金）</a></li><li><a href="#ja-s10">第9条（禁止事項）</a></li><li><a href="#ja-s11">第10条（違反した場合の措置）</a></li><li><a href="#ja-s12">第11条（知的財産権・お客様のコンテンツ）</a></li><li><a href="#ja-s13">第12条（サービスの変更・中断・終了）</a></li><li><a href="#ja-s14">第13条（免責および責任の制限）</a></li><li><a href="#ja-s15">第14条（連絡方法）</a></li><li><a href="#ja-s16">第15条（準拠法および管轄）</a></li><li><a href="#ja-s17">第16条（分離可能性）</a></li><li><a href="#ja-s18">第17条（App Store 経由でのご利用について）</a></li><li><a href="#ja-s19">第18条（規約の変更）</a></li><li><a href="#ja-s20">第19条（お問い合わせ）</a></li></ol></nav>
+<h1 id="ja-s1">利用規約（AI Diary）</h1>
+<p>最終更新日：2026年7月29日</p>
+<p>本利用規約（以下「本規約」）は、株式会社Enginee（以下「当社」）が提供するアプリケーション「AI Diary」（以下「本サービス」）の利用条件を定めるものです。お客様は、本サービスを利用することにより、本規約に同意したものとみなされます。</p>
+<p>個人情報の取り扱いについては、別途定める<a href="./privacy-policy.html">プライバシーポリシー</a>によります。プライバシーポリシーは本規約の一部を構成します。</p>
+<hr />
+<h2 id="ja-s2">第1条（適用）</h2>
+<ol><li>本規約は、本サービスの利用に関する当社とお客様との間の一切の関係に適用されます。</li><li>当社が本サービス上で個別に定める注意事項・ガイドライン等は、本規約の一部を構成します。</li></ol>
+<h2 id="ja-s3">第2条（アカウント）</h2>
+<ol><li>お客様は、Apple または Google のアカウントを用いて本サービスにサインインします。</li><li>サインインが完了する前の段階では、動作のために匿名アカウントが一時的に作成されます。サインインされないまま24時間が経過した匿名アカウントは自動的に削除され、それに紐づくデータも失われます。</li><li>お客様は、自身の認証情報を適切に管理する責任を負い、これを第三者と共有してはなりません。</li><li>お客様は、マイページの「アカウント削除」からいつでもアカウントを削除できます。削除の効果と、削除後も一定期間保持される情報については、プライバシーポリシー第12条をご確認ください。</li><li>本サービスは13歳未満（適用法域によっては16歳未満）の方の利用を想定していません。</li></ol>
+<h2 id="ja-s4">第3条（本サービスの内容とAI生成物について）</h2>
+<ol><li>本サービスは、AIキャラクターとの音声会話を通じて日記を作成・保存する機能を提供します。</li><li>本サービスに登場するキャラクターはすべて架空の存在であり、実在の人物ではありません。その応答はAIによって自動生成されたものであり、当社または特定の個人の見解を表すものではありません。</li><li>AIによる応答および生成された要約は、その正確性・完全性・有用性を保証するものではありません。事実と異なる内容が生成される場合があります。</li><li><strong>本サービスは、医療・心理療法・法律・金融その他の専門的助言を提供するものではなく、またカウンセリングや緊急時の相談窓口でもありません。</strong> これらの目的で本サービスに依拠しないでください。心身の不調や危機的な状況にある場合は、必ず医療機関、公的機関、その他の適切な専門窓口にご相談ください。</li><li>本サービスは日々の記録と対話を支援することを目的としたものであり、人との関わりや専門的な支援に代わるものではありません。</li></ol>
+<h2 id="ja-s5">第4条（記憶機能）</h2>
+<ol><li>本サービスは、会話の内容からお客様に関する情報を要約して保存し、次回以降の会話に利用します（以下「記憶」）。詳細はプライバシーポリシー第4条に定めます。</li><li>お客様は、アプリ内の「{キャラクター名}がおぼえていること」画面から記憶の内容をいつでも確認・編集・削除でき、マイページの「ぜんぶ忘れてもらう」から一括で削除できます。</li><li>記憶はAIによって自動生成されるため、事実と異なる内容や、お客様の意図と異なる解釈が含まれる場合があります。お客様は前項の方法により、いつでもこれを訂正・削除できます。</li></ol>
+<h2 id="ja-s6">第5条（位置情報を利用する機能）</h2>
+<ol><li>「帰宅したら電話」機能は任意の機能であり、初期設定では無効です。有効にするには、お客様による明示的な操作とOSの位置情報許可が必要です。</li><li>登録された自宅の座標は端末内にのみ保存され、当社サーバーへ送信・保存されません（プライバシーポリシー第5条）。</li><li>本機能は端末のOSが提供するジオフェンス機能に依存するため、電波状況、OSの省電力制御、位置情報の精度等により、検知されない場合や、意図しないタイミングで検知される場合があります。当社は本機能が確実に動作することを保証しません。</li><li>お客様は、いつでもマイページから本機能を無効にできます。無効にすると、位置情報の監視を停止し、端末に保存された座標を削除します。</li></ol>
+<h2 id="ja-s7">第6条（通知・着信機能）</h2>
+<ol><li>毎日のリマインダー通知および着信機能は、いずれも任意の機能です。</li><li><strong>着信機能（プッシュ通知を用いる着信画面）は、端末の通知設定やサイレントモードの状態にかかわらず着信音を鳴らす場合があります。</strong> 当社は、鳴動を許可する時間帯（既定 7:00〜23:30 日本時間）と1日あたりの回数をサーバー側で制限していますが、お客様は本機能が意図せず作動する可能性を理解したうえでご利用ください。</li><li>お客様は、いつでもマイページから通知・着信を無効にできます。</li><li>着信機能は、対応する端末およびビルドでのみ提供されます。</li></ol>
+<h2 id="ja-s8">第7条（利用回数・利用時間の制限）</h2>
+<ol><li>当社は、サービス品質の維持および運用コストの管理のため、本サービスの利用に回数および時間の制限を設けています。現在の制限は、通話が1日あたり1回、1回あたり最大5分です。</li><li>前項の制限は、サービスの提供状況に応じて当社が変更することがあります。制限を緩和する場合を除き、変更にあたっては可能な範囲で事前に告知します。</li></ol>
+<h2 id="ja-s9">第8条（料金）</h2>
+<p>本サービスは現在無料で提供されます。将来、有料の機能を提供する場合は、事前に条件を提示し、別途お客様の同意を得たうえで提供します。</p>
+<h2 id="ja-s10">第9条（禁止事項）</h2>
+<p>お客様は、本サービスの利用にあたり以下の行為を行ってはなりません。</p>
+<ol><li>法令または公序良俗に違反する行為</li><li>犯罪行為に関連する行為、またはこれを助長する行為</li><li>他者の権利（プライバシー・肖像権・名誉・知的財産権を含む）を侵害する行為</li><li>第三者の個人情報や機密情報を、当該第三者の同意なく本サービスに入力する行為</li><li>他人になりすます行為</li><li>本サービスの運営を妨害する行為、不正アクセス、リバースエンジニアリング、逆コンパイル、その他ソースコードの解析を試みる行為</li><li>自動化された手段による本サービスへのアクセス、当社サーバーへの過度な負荷をかける行為、および利用回数・利用時間の制限を回避する行為</li><li>本サービスが利用するAPIを、本サービスのアプリを通さずに直接利用する行為</li><li>違法・有害なコンテンツを生成させることを目的として本サービスを利用する行為</li><li>本サービスを個人的な日記・記録の用途以外に濫用する行為</li><li>その他、当社が不適切と合理的に判断する行為</li></ol>
+<h2 id="ja-s11">第10条（違反した場合の措置）</h2>
+<ol><li>当社は、お客様が本規約に違反したと合理的に判断した場合、事前の通知なく、本サービスの一部または全部の利用を制限し、またはアカウントを削除することができます。</li><li>当社は、前項の措置によりお客様に生じた損害について、当社に故意または重大な過失がある場合を除き、責任を負いません。</li></ol>
+<h2 id="ja-s12">第11条（知的財産権・お客様のコンテンツ）</h2>
+<ol><li>本サービスおよびキャラクター設定・画像・音声を含む本サービス上のコンテンツに関する知的財産権は、当社または正当な権利者に帰属します。お客様は、これらを当社の許諾なく複製、頒布、公衆送信、翻案してはなりません。</li><li>お客様が作成した会話・日記等のコンテンツは、お客様に帰属します。当社は、本サービスの提供（保存・要約・記憶の生成・表示）に必要な範囲でのみこれを処理します。</li><li>当社は、お客様のコンテンツを、AIモデルの学習のために利用しません。</li></ol>
+<h2 id="ja-s13">第12条（サービスの変更・中断・終了）</h2>
+<ol><li>当社は、合理的な範囲で本サービスの内容を変更し、または運用を中断・終了することができます。</li><li>重要な変更、および本サービスの終了については、可能な範囲で事前に告知します。</li><li>本サービスの終了に際しては、お客様がご自身のデータを確認・削除するための合理的な期間を設けるよう努めます。</li></ol>
+<h2 id="ja-s14">第13条（免責および責任の制限）</h2>
+<ol><li>当社は、本サービスがお客様の特定の目的に適合すること、不具合がないこと、および中断なく提供されることを保証しません。</li><li>当社は、本サービスの利用に関連してお客様に生じた損害について責任を負いません。ただし、当社の故意または重大な過失による場合、および消費者契約法その他の強行法規により免責が認められない場合は、この限りではありません。</li><li>前項ただし書が適用される場合であっても、当社の責任は、当社の予見しうる通常の損害の範囲に限られ、逸失利益その他の特別損害は含まれません。</li><li>当社は、外部サービスの障害・仕様変更、通信環境、端末のOSの動作等、当社の合理的な支配の及ばない事由により生じた不具合について責任を負いません。</li></ol>
+<h2 id="ja-s15">第14条（連絡方法）</h2>
+<ol><li>当社からお客様への連絡は、アプリ内の表示、プッシュ通知、または登録されたメールアドレス宛の送信により行います。</li><li>お客様から当社への連絡は、第19条に定めるお問い合わせ先までお願いします。</li></ol>
+<h2 id="ja-s16">第15条（準拠法および管轄）</h2>
+<ol><li>本規約の準拠法は日本法とします。</li><li>本サービスに関して当社とお客様の間に生じた紛争については、東京地方裁判所を第一審の専属的合意管轄裁判所とします。ただし、お客様の居住地の法令により消費者に保障される権利を妨げるものではありません。</li></ol>
+<h2 id="ja-s17">第16条（分離可能性）</h2>
+<p>本規約のいずれかの条項またはその一部が、法令等により無効または執行不能と判断された場合であっても、本規約の残りの部分および当該条項の残りの部分は、引き続き完全に効力を有します。</p>
+<h2 id="ja-s18">第17条（App Store 経由でのご利用について）</h2>
+<p>本サービスを Apple App Store 経由で取得した場合、以下が適用されます。</p>
+<ol><li>本規約はお客様と当社との間の契約であり、Apple Inc.（以下「Apple」）との契約ではありません。Apple は本サービスについて一切の責任を負いません。</li><li>本サービスの保守・サポートは当社が行い、Apple はその義務を負いません。</li><li>本サービスが適用される保証に適合しない場合、お客様は Apple に通知でき、Apple は（該当する場合）購入代金を返金することがあります。それを超える義務を Apple は負いません。</li><li>製造物責任、法令遵守、第三者の知的財産権侵害等に関する請求への対応は当社が行います。</li><li>お客様は、米国政府の禁輸対象国に所在せず、また禁止対象者リストに掲載されていないことを表明します。</li><li>Apple および Apple の子会社は本規約の第三者受益者であり、お客様が本規約に同意した場合、Apple は本規約をお客様に対して行使する権利を有します。</li></ol>
+<h2 id="ja-s19">第18条（規約の変更）</h2>
+<ol><li>当社は、本規約を変更する必要が生じた場合、民法第548条の4の規定に従い、本規約を変更することができます。</li><li>前項の場合、当社は、変更後の本規約の内容および効力発生時期を、アプリ内またはその他の適切な方法により、効力発生時期の前に周知します。</li><li>お客様に不利益となる重要な変更については、相当な予告期間を設けたうえで周知します。</li></ol>
+<h2 id="ja-s20">第19条（お問い合わせ）</h2>
+<p>本規約に関するお問い合わせは、以下までご連絡ください。</p>
+<ul><li>株式会社Enginee</li><li>〒112-0004　東京都文京区後楽2丁目3番11号　FLAT21 101号室</li><li>お問い合わせフォーム：<a href="https://www.enginee.co.jp/form" target="_blank" rel="noopener noreferrer">https://www.enginee.co.jp/form</a></li><li>メール：legal@enginee.co.jp</li><li>受付時間：10:00〜16:00（土・日・祝日・年末年始を除く）</li></ul>
+</section>
+<hr />
+<section class="lang-section" id="en" lang="en">
+<nav class="toc"><p>CONTENTS</p><ol><li><a href="#en-s2">Article 1 (Applicability)</a></li><li><a href="#en-s3">Article 2 (Accounts)</a></li><li><a href="#en-s4">Article 3 (Service Content and AI-Generated Output)</a></li><li><a href="#en-s5">Article 4 (Memory Features)</a></li><li><a href="#en-s6">Article 5 (Location-Based Features)</a></li><li><a href="#en-s7">Article 6 (Notifications and Incoming Calls)</a></li><li><a href="#en-s8">Article 7 (Usage Limits)</a></li><li><a href="#en-s9">Article 8 (Fees)</a></li><li><a href="#en-s10">Article 9 (Prohibited Conduct)</a></li><li><a href="#en-s11">Article 10 (Measures for Violations)</a></li><li><a href="#en-s12">Article 11 (Intellectual Property Rights / Your Content)</a></li><li><a href="#en-s13">Article 12 (Changes, Suspension, and Termination of the Service)</a></li><li><a href="#en-s14">Article 13 (Disclaimer and Limitation of Liability)</a></li><li><a href="#en-s15">Article 14 (Communications)</a></li><li><a href="#en-s16">Article 15 (Governing Law and Jurisdiction)</a></li><li><a href="#en-s17">Article 16 (Severability)</a></li><li><a href="#en-s18">Article 17 (Use via the App Store)</a></li><li><a href="#en-s19">Article 18 (Changes to the Terms)</a></li><li><a href="#en-s20">Article 19 (Contact)</a></li></ol></nav>
+<h1 id="en-s1">Terms of Service (AI Diary)</h1>
+<p>Last updated: July 29, 2026</p>
+<p>These Terms of Service (the &quot;Terms&quot;) govern the conditions under which you may use the application &quot;AI Diary&quot; (the &quot;Service&quot;) provided by Enginee Inc. (the &quot;Company,&quot; &quot;we,&quot; or &quot;us&quot;). By using the Service, you are deemed to have agreed to these Terms.</p>
+<p>Our handling of personal information is governed by our separate <a href="./privacy-policy.html">Privacy Policy</a>, which forms part of these Terms.</p>
+<hr />
+<h2 id="en-s2">Article 1 (Applicability)</h2>
+<ol><li>These Terms apply to all aspects of the relationship between the Company and you in connection with your use of the Service.</li><li>Any notices, guidelines, or similar materials that the Company sets out separately within the Service form part of these Terms.</li></ol>
+<h2 id="en-s3">Article 2 (Accounts)</h2>
+<ol><li>You sign in to the Service using your Apple or Google account.</li><li>Before sign-in completes, a temporary anonymous account is created so the app can function. Anonymous accounts that remain unsigned-in for 24 hours are deleted automatically, along with any data associated with them.</li><li>You are responsible for managing your authentication credentials appropriately and must not share them with any third party.</li><li>You may delete your account at any time via &quot;Delete Account&quot; in Settings. For the effects of deletion and the information retained for a limited period afterwards, see Section 12 of the Privacy Policy.</li><li>The Service is not intended for persons under 13 years of age (or under 16 years of age in certain jurisdictions).</li></ol>
+<h2 id="en-s4">Article 3 (Service Content and AI-Generated Output)</h2>
+<ol><li>The Service provides functionality for creating and saving diary entries through voice conversations with AI characters.</li><li>All characters appearing in the Service are fictional and are not real people. Their responses are generated automatically by AI and do not represent the views of the Company or of any individual.</li><li>AI responses and generated summaries do not carry any guarantee of accuracy, completeness, or fitness for any purpose. They may contain statements that are factually incorrect.</li><li><strong>The Service does not provide medical, psychotherapeutic, legal, financial, or other professional advice, and it is not a counseling service or a crisis helpline.</strong> Do not rely on the Service for such purposes. If you are experiencing physical or mental distress, or are in a crisis situation, please contact a medical institution, a public agency, or another appropriate professional service.</li><li>The Service is intended to support daily journaling and conversation. It is not a substitute for human relationships or professional support.</li></ol>
+<h2 id="en-s5">Article 4 (Memory Features)</h2>
+<ol><li>The Service summarizes and stores information about you derived from your conversations and uses it in subsequent conversations (&quot;Memories&quot;). Details are set out in Section 4 of the Privacy Policy.</li><li>You can review, edit, and delete your Memories at any time on the &quot;What {character} remembers&quot; screen, and delete them all at once via &quot;Forget everything&quot; in Settings.</li><li>Because Memories are generated automatically by AI, they may contain statements that are factually incorrect or interpretations that differ from your intent. You may correct or delete them at any time using the methods in the preceding paragraph.</li></ol>
+<h2 id="en-s6">Article 5 (Location-Based Features)</h2>
+<ol><li>The &quot;Call me when I get home&quot; feature is optional and is disabled by default. Enabling it requires an explicit action by you and the OS location permission.</li><li>Registered home coordinates are stored only on your device and are never transmitted to or stored on our servers (Section 5 of the Privacy Policy).</li><li>Because this feature depends on the geofencing functionality provided by your device's OS, detection may fail or may occur at unintended times due to signal conditions, OS power-saving behavior, location accuracy, and similar factors. The Company does not warrant that this feature will operate reliably.</li><li>You may disable this feature at any time in Settings. Doing so stops location monitoring and deletes the coordinates stored on your device.</li></ol>
+<h2 id="en-s7">Article 6 (Notifications and Incoming Calls)</h2>
+<ol><li>Daily reminder notifications and the incoming-call feature are both optional.</li><li><strong>The incoming-call feature (a call screen delivered via push notifications) may ring regardless of your device's notification settings or silent mode.</strong> The Company restricts the permitted ringing window (7:00–23:30 JST by default) and the number of calls per day on the server side, but you should use this feature understanding that it may activate unintentionally.</li><li>You may disable notifications and incoming calls at any time in Settings.</li><li>The incoming-call feature is available only on supported devices and builds.</li></ol>
+<h2 id="en-s8">Article 7 (Usage Limits)</h2>
+<ol><li>To maintain service quality and manage operating costs, the Company imposes limits on the frequency and duration of use. The current limits are one call per day, with a maximum duration of five minutes per call.</li><li>The Company may change these limits according to the state of the Service. Except where limits are relaxed, we will give advance notice of such changes to the extent practicable.</li></ol>
+<h2 id="en-s9">Article 8 (Fees)</h2>
+<p>The Service is currently provided free of charge. If we introduce paid features in the future, we will present the applicable terms in advance and obtain your separate consent before making them available.</p>
+<h2 id="en-s10">Article 9 (Prohibited Conduct)</h2>
+<p>You must not engage in any of the following when using the Service:</p>
+<ol><li>Acts that violate laws, regulations, or public order and morals</li><li>Acts related to, or that facilitate, criminal activity</li><li>Acts that infringe the rights of others (including privacy, likeness, reputation, and intellectual property rights)</li><li>Entering a third party's personal or confidential information into the Service without that party's consent</li><li>Impersonating another person</li><li>Interfering with the operation of the Service, unauthorized access, reverse engineering, decompilation, or any other attempt to analyze the source code</li><li>Accessing the Service by automated means, placing excessive load on our servers, or circumventing usage limits</li><li>Using the APIs on which the Service relies directly, outside of the Service's application</li><li>Using the Service for the purpose of generating illegal or harmful content</li><li>Misusing the Service for any purpose other than personal diary-keeping and personal record-keeping</li><li>Any other conduct that the Company reasonably deems inappropriate</li></ol>
+<h2 id="en-s11">Article 10 (Measures for Violations)</h2>
+<ol><li>If the Company reasonably determines that you have violated these Terms, it may restrict your use of all or part of the Service, or delete your account, without prior notice.</li><li>Except in cases of the Company's willful misconduct or gross negligence, the Company is not liable for damages arising from measures taken under the preceding paragraph.</li></ol>
+<h2 id="en-s12">Article 11 (Intellectual Property Rights / Your Content)</h2>
+<ol><li>Intellectual property rights in and to the Service and its content — including character settings, images, and audio — belong to the Company or to the respective legitimate rights holders. You must not reproduce, distribute, publicly transmit, or adapt them without our permission.</li><li>Conversations, diary entries, and other content you create belong to you. The Company processes such content only to the extent necessary to provide the Service (storage, summarization, memory generation, and display).</li><li>The Company does not use your content to train AI models.</li></ol>
+<h2 id="en-s13">Article 12 (Changes, Suspension, and Termination of the Service)</h2>
+<ol><li>The Company may, within a reasonable scope, change the content of the Service or suspend or terminate its operation.</li><li>The Company will give advance notice of material changes and of termination of the Service to the extent practicable.</li><li>Upon termination of the Service, the Company will endeavor to provide a reasonable period for you to review and delete your data.</li></ol>
+<h2 id="en-s14">Article 13 (Disclaimer and Limitation of Liability)</h2>
+<ol><li>The Company does not warrant that the Service is fit for any particular purpose, that it is free from defects, or that it will be provided without interruption.</li><li>The Company shall not be liable for any damages incurred by you in connection with your use of the Service. However, this limitation does not apply where such damages result from the Company's willful misconduct or gross negligence, or where disclaimer is not permitted under the Consumer Contract Act or other mandatory applicable law.</li><li>Even where the proviso to the preceding paragraph applies, the Company's liability is limited to ordinary damages foreseeable by the Company and does not extend to lost profits or other special damages.</li><li>The Company is not liable for defects arising from causes beyond its reasonable control, including failures or specification changes at external services, network conditions, and the behavior of your device's OS.</li></ol>
+<h2 id="en-s15">Article 14 (Communications)</h2>
+<ol><li>Communications from the Company to you will be made by in-app display, push notification, or transmission to your registered email address.</li><li>Communications from you to the Company should be directed to the contact set out in Article 19.</li></ol>
+<h2 id="en-s16">Article 15 (Governing Law and Jurisdiction)</h2>
+<ol><li>These Terms shall be governed by and construed in accordance with the laws of Japan.</li><li>Any dispute arising between the Company and you in connection with the Service shall be subject to the exclusive jurisdiction of the Tokyo District Court as the court of first instance. This shall not, however, deprive you of any rights guaranteed to consumers under the laws of your country of residence.</li></ol>
+<h2 id="en-s17">Article 16 (Severability)</h2>
+<p>If any provision of these Terms, or any part of a provision, is held invalid or unenforceable under applicable law, the remainder of these Terms and the remainder of that provision shall continue in full force and effect.</p>
+<h2 id="en-s18">Article 17 (Use via the App Store)</h2>
+<p>If you obtained the Service through the Apple App Store, the following terms apply:</p>
+<ol><li>These Terms constitute an agreement between you and the Company, not between you and Apple Inc. (&quot;Apple&quot;). Apple bears no responsibility whatsoever for the Service.</li><li>Maintenance and support for the Service are the sole responsibility of the Company; Apple has no obligation to provide them.</li><li>If the Service fails to conform to any applicable warranty, you may notify Apple, and Apple may (where applicable) refund the purchase price. Apple has no further warranty obligation beyond this.</li><li>The Company, not Apple, is responsible for addressing any claims relating to product liability, regulatory compliance, or infringement of third-party intellectual property rights.</li><li>You represent and warrant that you are not located in a country subject to a U.S. government embargo and are not listed on any U.S. government prohibited-party list.</li><li>Apple and its subsidiaries are third-party beneficiaries of these Terms and, upon your acceptance of these Terms, have the right to enforce these Terms against you.</li></ol>
+<h2 id="en-s19">Article 18 (Changes to the Terms)</h2>
+<ol><li>Where it becomes necessary to amend these Terms, the Company may do so in accordance with Article 548-4 of the Civil Code of Japan.</li><li>In such case, the Company will announce the content of the amended Terms and the date on which they take effect, within the app or by other appropriate means, before that date.</li><li>For material changes that are disadvantageous to you, the Company will give notice with a reasonable advance period.</li></ol>
+<h2 id="en-s20">Article 19 (Contact)</h2>
+<p>For inquiries regarding these Terms, please contact:</p>
+<ul><li>Enginee Inc. (株式会社Enginee)</li><li>FLAT21 Room 101, 2-3-11 Koraku, Bunkyo-ku, Tokyo 112-0004, Japan</li><li>Inquiry form: <a href="https://www.enginee.co.jp/form" target="_blank" rel="noopener noreferrer">https://www.enginee.co.jp/form</a></li><li>Email: legal@enginee.co.jp</li><li>Hours: 10:00–16:00 JST (excluding weekends, public holidays, and the year-end/New Year period)</li></ul>
+</section>
+<footer>
+<p>株式会社Enginee / Enginee Inc.</p>
+<p>この文書は <code>doc/legal/terms.md</code> から生成されています。 / Generated from the source Markdown.</p>
+</footer>
+</div>
+</body>
+</html>

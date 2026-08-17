@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>法的文書｜AI Diary</title>
+<meta name="robots" content="index, follow" />
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --surface: #f6f7f9;
+  --text: #1a1c1e;
+  --muted: #5b6169;
+  --border: #d9dde2;
+  --link: #1f6feb;
+  --accent: #6b4fbb;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14161a;
+    --surface: #1d2026;
+    --text: #e6e8eb;
+    --muted: #a2a9b3;
+    --border: #333941;
+    --link: #7fb0ff;
+    --accent: #b39cf0;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Segoe UI", Roboto, sans-serif;
+  line-height: 1.85;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+.wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 96px; }
+header.doc { border-bottom: 1px solid var(--border); padding-bottom: 20px; margin-bottom: 8px; }
+.home { display: inline-block; color: var(--muted); text-decoration: none; font-size: 14px; margin-bottom: 12px; }
+.home:hover { color: var(--link); }
+h1 { font-size: 1.7rem; line-height: 1.4; margin: 8px 0 12px; letter-spacing: .01em; }
+h2 { font-size: 1.18rem; line-height: 1.5; margin: 44px 0 10px; padding-top: 8px; }
+h3 { font-size: 1rem; margin: 28px 0 6px; color: var(--accent); }
+p { margin: 12px 0; }
+ul, ol { margin: 12px 0; padding-left: 1.5em; }
+li { margin: 7px 0; }
+a { color: var(--link); overflow-wrap: anywhere; }
+strong { font-weight: 700; }
+hr { border: 0; border-top: 1px solid var(--border); margin: 36px 0; }
+.table-wrap { overflow-x: auto; margin: 16px 0; -webkit-overflow-scrolling: touch; }
+table { border-collapse: collapse; width: 100%; font-size: .92rem; min-width: 460px; }
+th, td { border: 1px solid var(--border); padding: 9px 11px; text-align: left; vertical-align: top; line-height: 1.7; }
+th { background: var(--surface); font-weight: 600; }
+.langbar { display: flex; gap: 8px; margin: 16px 0 4px; flex-wrap: wrap; }
+.langbar a {
+  font-size: .85rem; text-decoration: none; color: var(--muted);
+  border: 1px solid var(--border); border-radius: 999px; padding: 5px 14px;
+}
+.langbar a:hover { color: var(--link); border-color: var(--link); }
+.toc { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 18px; margin: 20px 0 8px; }
+.toc p { margin: 0 0 8px; font-size: .8rem; font-weight: 700; color: var(--muted); letter-spacing: .06em; }
+.toc ol { margin: 0; padding-left: 1.3em; }
+.toc li { margin: 3px 0; font-size: .9rem; }
+.toc a { text-decoration: none; }
+.toc a:hover { text-decoration: underline; }
+.lang-section { scroll-margin-top: 12px; }
+.updated { color: var(--muted); font-size: .88rem; margin: 0; }
+footer { margin-top: 64px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: .82rem; }
+footer a { color: var(--muted); }
+.cards { display: grid; gap: 14px; margin: 24px 0; }
+.card {
+  display: block; border: 1px solid var(--border); border-radius: 12px;
+  padding: 18px 20px; text-decoration: none; color: inherit; background: var(--surface);
+}
+.card:hover { border-color: var(--link); }
+.card .t { font-size: 1.06rem; font-weight: 700; margin-bottom: 3px; }
+.card .d { color: var(--muted); font-size: .87rem; }
+@media print {
+  body { font-size: 11pt; line-height: 1.6; }
+  .langbar, .toc, .home { display: none; }
+  a { color: inherit; text-decoration: underline; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="doc">
+<h1>AI Diary 法的文書<br /><span style="font-size:1rem;font-weight:400;color:var(--muted)">Legal Documents</span></h1>
+<p class="updated">株式会社Engineeが提供するアプリケーション「AI Diary」の利用規約およびプライバシーポリシーです。各文書は日本語と英語を併記しています。</p>
+<p class="updated">Terms of Service and Privacy Policy for the application &ldquo;AI Diary&rdquo; provided by Enginee Inc. Each document contains both Japanese and English text.</p>
+</header>
+<div class="cards">
+<a class="card" href="./privacy-policy.html">
+<div class="t">プライバシーポリシー / Privacy Policy</div>
+<div class="d">最終更新日：2026年7月29日 &middot; Last updated: July 29, 2026</div>
+</a>
+<a class="card" href="./terms.html">
+<div class="t">利用規約 / Terms of Service</div>
+<div class="d">最終更新日：2026年7月29日 &middot; Last updated: July 29, 2026</div>
+</a>
+</div>
+<footer>
+<p>株式会社Enginee　〒112-0004 東京都文京区後楽2丁目3番11号 FLAT21 101号室</p>
+<p>お問い合わせ / Contact: <a href="mailto:legal@enginee.co.jp">legal@enginee.co.jp</a> &middot; <a href="https://www.enginee.co.jp/form" target="_blank" rel="noopener noreferrer">お問い合わせフォーム</a></p>
+</footer>
+</div>
+</body>
+</html>
